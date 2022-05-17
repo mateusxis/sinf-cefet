@@ -19,7 +19,7 @@ public class MyList {
         Scanner myScanner = new Scanner(System.in);
         
         while (!"0".equals(numberExercise)) {
-            System.out.println("Enter exercise number: If you want exit, press 0.");
+            System.out.println("Enter number exercise: If you want exit, press 0.");
             numberExercise = myScanner.nextLine();
             System.out.println("Exercise " + numberExercise + " started!");
             
@@ -28,7 +28,7 @@ public class MyList {
                     Exercise1 exercise1 = new Exercise1();
                     exercise1.run();
                 }
-                default -> System.out.println("Enter exercise number available!");
+                default -> System.out.println("Enter number exercise available!");
             }
         }
     }
