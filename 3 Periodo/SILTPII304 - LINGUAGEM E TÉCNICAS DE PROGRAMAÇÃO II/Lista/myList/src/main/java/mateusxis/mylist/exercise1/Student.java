@@ -1,0 +1,76 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package mateusxis.mylist.exercise1;
+
+/**
+ *
+ * @author mateusxis
+ */
+public class Student {
+    private String name;
+    private String registration;
+    private float noteOne;
+    private float noteTwo;
+    private boolean isAproved = false;
+    
+    public void setName (String _name) {
+        this.name = _name;
+    }
+    
+    public String getName() {
+        return this.name;
+    }
+    
+    public void setRegistration (String _registration){
+        this.registration = _registration;
+    }
+    
+    public String getRegistration() {
+        return this.registration;
+    }
+    
+    public void setNoteOne(String _noteOneInput) {
+        float _noteOne = Float.parseFloat(_noteOneInput);  
+        if (_noteOne > 0f && _noteOne < 10f) {
+            this.noteOne = _noteOne;
+        }
+    }
+    
+    public float getNoteOne() {
+        return this.noteOne;
+    }
+    
+    public void setNoteTwo(String _noteTwoInput) {
+        float _noteTwo = Float.parseFloat(_noteTwoInput);  
+         if (_noteTwo > 0f && _noteTwo < 10f) {
+            this.noteTwo = _noteTwo;
+        }
+    }
+    
+    public float getNoteTwo() {
+        return this.noteTwo;
+    }
+    
+    public void setIsAproved(boolean _isAproved) {
+        this.isAproved = _isAproved;
+    }
+    
+    public boolean getIsAproved() {
+        return this.isAproved;
+    }
+    
+    public float calculateAvarage () {
+        float _noteOne = getNoteOne();
+        float _noteTwo = getNoteTwo();
+        float avarege = (_noteOne + _noteTwo);
+        if (avarege >= 7f) {
+            this.setIsAproved(true);
+        } else {
+            this.setIsAproved(false);
+        }
+        
+        return avarege;
+    }
+}
