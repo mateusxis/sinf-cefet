@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author sueta
+ * @author mateusxis
  */
 public class Exercise1 {
     public void run () {
@@ -27,7 +27,7 @@ public class Exercise1 {
             student.setNoteTwo(myScanner.nextLine());
         } while (student.getNoteTwo() == -1f);
         
-        System.out.println("Calculate avarage:");
+        System.out.println("Calculate avarage:");  
         float avarage = student.calculateAvarage();
         System.out.println("His avarage: " + avarage);
 
