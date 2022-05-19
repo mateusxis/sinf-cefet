@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package mateusxis.mylist;
 
 import java.util.Scanner;
@@ -24,7 +19,7 @@ public class MyList {
             System.out.println("Exercise " + numberExercise + " started!");
             
             switch(numberExercise) {
-                case "1" -> {
+                case "1" -> {   
                     Exercise1 exercise1 = new Exercise1();
                     exercise1.run();
                 }
