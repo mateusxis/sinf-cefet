@@ -27,14 +27,14 @@ public class Exercise1 {
             student.setNoteTwo(myScanner.nextLine());
         } while (student.getNoteTwo() == -1f);
         
-        System.out.println("Calculate avarage:");  
-        float avarage = student.calculateAvarage();
-        System.out.println("His avarage: " + avarage);
+        System.out.println("Calculate average:");  
+        float average = student.calculateAverage();
+        System.out.println("His average: " + average);
 
-        if (student.getIsAproved()) {
-            System.out.println("Student " + student.getName() + " is aproved");
+        if (student.getIsApproved()) {
+            System.out.println("Student " + student.getName() + " is approved");
         } else { 
-            System.out.println("Student " + student.getName() + " isn't aproved");
+            System.out.println("Student " + student.getName() + " isn't approved");
         }
     }
 }

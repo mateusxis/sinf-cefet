@@ -9,7 +9,7 @@ public class Student {
     private String registration;
     private float noteOne = -1f;
     private float noteTwo = -1f;
-    private boolean isAproved = false;
+    private boolean isApproved = false;
     
     public void setName (String _name) {
         this.name = _name;
@@ -31,6 +31,8 @@ public class Student {
         float _noteOne = Float.parseFloat(_noteOneInput);  
         if (_noteOne >= 0f && _noteOne <= 10f) {
             this.noteOne = _noteOne;
+        } else {
+            System.out.println("Enter number for 0 to 10");
         }
     }
     
@@ -40,8 +42,10 @@ public class Student {
     
     public void setNoteTwo(String _noteTwoInput) {
         float _noteTwo = Float.parseFloat(_noteTwoInput);  
-         if (_noteTwo >= 0f && _noteTwo <= 10f) {
+        if (_noteTwo >= 0f && _noteTwo <= 10f) {
             this.noteTwo = _noteTwo;
+        } else {
+            System.out.println("Enter number for 0 to 10");
         }
     }
     
@@ -49,24 +53,24 @@ public class Student {
         return this.noteTwo;
     }
     
-    public void setIsAproved(boolean _isAproved) {
-        this.isAproved = _isAproved;
+    public void setIsApproved(boolean _isApproved) {
+        this.isApproved = _isApproved;
     }
     
-    public boolean getIsAproved() {
-        return this.isAproved;
+    public boolean getIsApproved() {
+        return this.isApproved;
     }
     
-    public float calculateAvarage () {
+    public float calculateAverage () {
         float _noteOne = getNoteOne();
         float _noteTwo = getNoteTwo();
-        float avarage = (_noteOne + _noteTwo)/2;
-        if (avarage >= 7f) {
-            this.setIsAproved(true);
+        float average = (_noteOne + _noteTwo)/2;
+        if (average >= 7f) {
+            this.setIsApproved(true);
         } else {
-            this.setIsAproved(false);
+            this.setIsApproved(false);
         }
         
-        return avarage;
+        return average;
     }
 }
