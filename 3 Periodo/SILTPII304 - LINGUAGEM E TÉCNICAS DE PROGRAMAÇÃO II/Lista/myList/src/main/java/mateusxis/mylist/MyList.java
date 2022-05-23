@@ -3,6 +3,7 @@ package mateusxis.mylist;
 import java.util.Scanner;
 import mateusxis.mylist.exercise1.*;
 import mateusxis.mylist.exercise2.*;
+import mateusxis.mylist.exercise3.*;
 
 /**
  *
@@ -27,6 +28,10 @@ public class MyList {
                 case "2" -> {
                     Exercise2 exercise2 = new Exercise2();
                     exercise2.run();
+                }
+                case "3" -> {
+                    Exercise3 exercise3 = new Exercise3();
+                    exercise3.run();
                 }
                 default -> System.out.println("Enter number exercise available!");
             }
