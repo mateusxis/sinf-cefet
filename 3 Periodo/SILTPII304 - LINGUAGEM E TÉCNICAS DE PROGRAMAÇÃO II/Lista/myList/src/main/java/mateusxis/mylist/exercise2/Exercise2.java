@@ -33,7 +33,7 @@ public class Exercise2 {
 
         if (student.getIsApproved()) {
             System.out.println("Student " + student.getName() + " is approved");
-        } else if (student.needTestFinal()){ 
+        } else if (student.getNeedTestFinal()){ 
             do {
                 System.out.println("Enter note of test final: ");
                 student.setNoteFinal(myScanner.nextLine());

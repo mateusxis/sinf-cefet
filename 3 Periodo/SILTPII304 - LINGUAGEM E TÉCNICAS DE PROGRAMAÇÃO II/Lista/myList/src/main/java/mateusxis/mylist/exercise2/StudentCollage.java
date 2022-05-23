@@ -22,7 +22,7 @@ public class StudentCollage extends Student {
         return this.noteFinal;
     }
     
-     public void setNeedTestFinal(boolean _needTestFinal) {
+    public void setNeedTestFinal(boolean _needTestFinal) {
         this.needTestFinal = _needTestFinal;
     }
     
