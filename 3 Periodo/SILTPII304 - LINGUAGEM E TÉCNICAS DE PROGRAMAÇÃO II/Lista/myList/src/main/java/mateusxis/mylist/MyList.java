@@ -4,6 +4,8 @@ import java.util.Scanner;
 import mateusxis.mylist.exercise1.*;
 import mateusxis.mylist.exercise2.*;
 import mateusxis.mylist.exercise3.*;
+import mateusxis.mylist.exercise4.*;
+
 
 /**
  *
@@ -32,6 +34,10 @@ public class MyList {
                 case "3" -> {
                     Exercise3 exercise3 = new Exercise3();
                     exercise3.run();
+                }
+                case "4" -> {
+                    Exercise4 exercise4 = new Exercise4();
+                    exercise4.run();
                 }
                 default -> System.out.println("Enter number exercise available!");
             }
